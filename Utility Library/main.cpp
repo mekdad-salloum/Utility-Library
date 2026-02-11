@@ -1,5 +1,6 @@
 ﻿#include <iostream>
-#include "clsUtility.h"  
+#include "clsUtility.h"  // Make sure this file is in the same folder
+#include "clsDate.h"  // Needed if you want to test Swap with clsDate
 
 using namespace std;
 
@@ -13,7 +14,7 @@ int main()
     cout << "Random Number: " << randNum << endl;
 
     // 3. Generate a random character (capital letter)
-    char randomChar = clsUtility::GetRandomCharacter(clsUtility::MixCharacter);
+    char randomChar = clsUtility::GetRandomCharacter(clsUtility::CapitalLetter);
     cout << "Random Character: " << randomChar << endl;
 
     // 4. Generate a random word with 5 lowercase letters
